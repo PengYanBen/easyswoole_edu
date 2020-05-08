@@ -1,0 +1,1 @@
+[2020-05-08 08:04:36 *1340.4]	NOTICE	swFactoryProcess_finish (ERRNO 1004): send 1744 byte failed, because connection[fd=4] is closed
