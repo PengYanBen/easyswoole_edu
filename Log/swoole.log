@@ -1,1 +1,74 @@
 [2020-05-08 08:04:36 *1340.4]	NOTICE	swFactoryProcess_finish (ERRNO 1004): send 1744 byte failed, because connection[fd=4] is closed
+[2020-05-08 08:50:57 *1341.5]	WARNING	swSignalfd_onSignal (ERRNO 707): Unable to find callback function for signal Hangup: 1
+[2020-05-08 08:50:57 *1340.4]	WARNING	swSignalfd_onSignal (ERRNO 707): Unable to find callback function for signal Hangup: 1
+[2020-05-08 08:50:57 *1339.3]	WARNING	swSignalfd_onSignal (ERRNO 707): Unable to find callback function for signal Hangup: 1
+[2020-05-08 08:50:57 $1334.0]	WARNING	swSignal_callback (ERRNO 707): Unable to find callback function for signal Hangup: 1
+[2020-05-08 08:50:57 $1334.0]	WARNING	swManager_check_exit_status: worker#10[pid=1346] abnormal exit, status=0, signal=1
+[2020-05-08 08:50:57 $1334.0]	WARNING	swManager_check_exit_status: worker#11[pid=1347] abnormal exit, status=0, signal=1
+[2020-05-08 08:50:57 #1333.1]	WARNING	swSignalfd_onSignal (ERRNO 707): Unable to find callback function for signal Hangup: 1
+[2020-05-08 08:50:57 *1338.2]	WARNING	swSignalfd_onSignal (ERRNO 707): Unable to find callback function for signal Hangup: 1
+[2020-05-08 08:50:57 *1342.6]	WARNING	swSignalfd_onSignal (ERRNO 707): Unable to find callback function for signal Hangup: 1
+[2020-05-08 08:50:57 *1343.7]	WARNING	swSignalfd_onSignal (ERRNO 707): Unable to find callback function for signal Hangup: 1
+[2020-05-08 08:50:57 *1336.0]	WARNING	swSignalfd_onSignal (ERRNO 707): Unable to find callback function for signal Hangup: 1
+[2020-05-08 08:50:57 *1337.1]	WARNING	swSignalfd_onSignal (ERRNO 707): Unable to find callback function for signal Hangup: 1
+[2020-05-08 08:50:57 $1334.0]	WARNING	swManager_check_exit_status: worker#8[pid=1344] abnormal exit, status=0, signal=1
+[2020-05-08 08:50:57 $1334.0]	WARNING	swManager_check_exit_status: worker#9[pid=1345] abnormal exit, status=0, signal=1
+[2020-05-08 08:50:57 $1334.0]	WARNING	swManager_check_exit_status: worker#12[pid=1348] abnormal exit, status=0, signal=1
+[2020-05-11 07:42:28 #10723.1]	INFO	Server is shutdown now
+[2020-05-11 07:58:24 *15506.4]	ERROR	php_swoole_server_rshutdown (ERRNO 503): Fatal error: Cannot declare class App\HttpController\User, because the name is already in use in /home/server/doc/easyswoole/App/HttpController/Api/User.php on line 21
+[2020-05-11 07:58:24 $15500.0]	WARNING	swManager_check_exit_status: worker#4[pid=15506] abnormal exit, status=255, signal=0
+[2020-05-11 07:58:26 *15507.5]	ERROR	php_swoole_server_rshutdown (ERRNO 503): Fatal error: Cannot declare class App\HttpController\User, because the name is already in use in /home/server/doc/easyswoole/App/HttpController/Api/User.php on line 21
+[2020-05-11 07:58:26 $15500.0]	WARNING	swManager_check_exit_status: worker#5[pid=15507] abnormal exit, status=255, signal=0
+[2020-05-11 08:37:44 $15909.0]	WARNING	swSignal_callback (ERRNO 707): Unable to find callback function for signal Hangup: 1
+[2020-05-11 08:37:44 #15908.1]	WARNING	swSignalfd_onSignal (ERRNO 707): Unable to find callback function for signal Hangup: 1
+[2020-05-11 08:37:44 *15914.3]	WARNING	swSignalfd_onSignal (ERRNO 707): Unable to find callback function for signal Hangup: 1
+[2020-05-11 08:37:44 $15909.0]	WARNING	swManager_check_exit_status: worker#9[pid=15920] abnormal exit, status=0, signal=1
+[2020-05-11 08:37:44 *15917.6]	WARNING	swSignalfd_onSignal (ERRNO 707): Unable to find callback function for signal Hangup: 1
+[2020-05-11 08:37:44 *15918.7]	WARNING	swSignalfd_onSignal (ERRNO 707): Unable to find callback function for signal Hangup: 1
+[2020-05-11 08:37:44 *15911.0]	WARNING	swSignalfd_onSignal (ERRNO 707): Unable to find callback function for signal Hangup: 1
+[2020-05-11 08:37:44 *15913.2]	WARNING	swSignalfd_onSignal (ERRNO 707): Unable to find callback function for signal Hangup: 1
+[2020-05-11 08:37:44 *15916.5]	WARNING	swSignalfd_onSignal (ERRNO 707): Unable to find callback function for signal Hangup: 1
+[2020-05-11 08:37:44 *15912.1]	WARNING	swSignalfd_onSignal (ERRNO 707): Unable to find callback function for signal Hangup: 1
+[2020-05-11 08:37:44 $15909.0]	WARNING	swManager_check_exit_status: worker#8[pid=15919] abnormal exit, status=0, signal=1
+[2020-05-11 08:37:44 $15909.0]	WARNING	swManager_check_exit_status: worker#10[pid=15921] abnormal exit, status=0, signal=1
+[2020-05-11 08:37:44 $15909.0]	WARNING	swManager_check_exit_status: worker#11[pid=15922] abnormal exit, status=0, signal=1
+[2020-05-11 08:37:44 $15909.0]	WARNING	swManager_check_exit_status: worker#12[pid=15923] abnormal exit, status=0, signal=1
+[2020-05-11 08:37:44 *15915.4]	WARNING	swSignalfd_onSignal (ERRNO 707): Unable to find callback function for signal Hangup: 1
+PHP Fatal error:  Class 'App\HttpController\Base' not found in /home/server/doc/easyswoole/App/HttpController/User/User.php on line 8
+
+Fatal error: Class 'App\HttpController\Base' not found in /home/server/doc/easyswoole/App/HttpController/User/User.php on line 8
+[2020-05-12 09:45:46][debug][error]:[Class 'App\HttpController\Base' not found at file:/home/server/doc/easyswoole/App/HttpController/User/User.php line:8]
+[2020-05-11 21:45:46 *18413.4]	ERROR	php_swoole_server_rshutdown (ERRNO 503): Fatal error: Class 'App\HttpController\Base' not found in /home/server/doc/easyswoole/App/HttpController/User/User.php on line 8
+[2020-05-11 21:45:46 $18407.0]	WARNING	swManager_check_exit_status: worker#4[pid=18413] abnormal exit, status=255, signal=0
+[2020-05-11 21:47:37 #18406.1]	INFO	Server is shutdown now
+[2020-05-11 21:47:50 *18514.4]	ERROR	php_swoole_server_rshutdown (ERRNO 503): Fatal error: Class 'App\HttpController\Base' not found in /home/server/doc/easyswoole/App/HttpController/User/User.php on line 8
+[2020-05-11 21:47:50 $18508.0]	WARNING	swManager_check_exit_status: worker#4[pid=18514] abnormal exit, status=255, signal=0
+[2020-05-11 21:53:42 *18532.4]	ERROR	php_swoole_server_rshutdown (ERRNO 503): Fatal error: Class 'App\HttpController\Base' not found in /home/server/doc/easyswoole/App/HttpController/User/User.php on line 8
+[2020-05-11 21:53:42 $18526.0]	WARNING	swManager_check_exit_status: worker#4[pid=18532] abnormal exit, status=255, signal=0
+[2020-05-11 21:54:30 *18549.4]	ERROR	php_swoole_server_rshutdown (ERRNO 503): Fatal error: Class 'App\HttpController\Base' not found in /home/server/doc/easyswoole/App/HttpController/User/User.php on line 8
+[2020-05-11 21:54:30 $18543.0]	WARNING	swManager_check_exit_status: worker#4[pid=18549] abnormal exit, status=255, signal=0
+[2020-05-12 00:21:45 *18835.7]	WARNING	swSignalfd_onSignal (ERRNO 707): Unable to find callback function for signal Hangup: 1
+[2020-05-12 00:21:45 *18834.6]	WARNING	swSignalfd_onSignal (ERRNO 707): Unable to find callback function for signal Hangup: 1
+[2020-05-12 00:21:45 *18833.5]	WARNING	swSignalfd_onSignal (ERRNO 707): Unable to find callback function for signal Hangup: 1
+[2020-05-12 00:21:45 *18832.4]	WARNING	swSignalfd_onSignal (ERRNO 707): Unable to find callback function for signal Hangup: 1
+[2020-05-12 00:21:45 *18831.3]	WARNING	swSignalfd_onSignal (ERRNO 707): Unable to find callback function for signal Hangup: 1
+[2020-05-12 00:21:45 *18830.2]	WARNING	swSignalfd_onSignal (ERRNO 707): Unable to find callback function for signal Hangup: 1
+[2020-05-12 00:21:45 *18829.1]	WARNING	swSignalfd_onSignal (ERRNO 707): Unable to find callback function for signal Hangup: 1
+[2020-05-12 00:21:45 $18826.0]	WARNING	swSignal_callback (ERRNO 707): Unable to find callback function for signal Hangup: 1
+[2020-05-12 00:21:45 $18826.0]	WARNING	swManager_check_exit_status: worker#10[pid=18838] abnormal exit, status=0, signal=1
+[2020-05-12 00:21:45 #18825.1]	WARNING	swSignalfd_onSignal (ERRNO 707): Unable to find callback function for signal Hangup: 1
+[2020-05-12 00:21:45 *18831.3]	WARNING	swSignalfd_onSignal (ERRNO 707): Unable to find callback function for signal Hangup: 1
+[2020-05-12 00:21:45 *18829.1]	WARNING	swSignalfd_onSignal (ERRNO 707): Unable to find callback function for signal Hangup: 1
+[2020-05-12 00:21:45 #18825.1]	WARNING	swSignalfd_onSignal (ERRNO 707): Unable to find callback function for signal Hangup: 1
+[2020-05-12 00:21:45 *18833.5]	WARNING	swSignalfd_onSignal (ERRNO 707): Unable to find callback function for signal Hangup: 1
+[2020-05-12 00:21:45 *18830.2]	WARNING	swSignalfd_onSignal (ERRNO 707): Unable to find callback function for signal Hangup: 1
+[2020-05-12 00:21:45 *18834.6]	WARNING	swSignalfd_onSignal (ERRNO 707): Unable to find callback function for signal Hangup: 1
+[2020-05-12 00:21:45 *18832.4]	WARNING	swSignalfd_onSignal (ERRNO 707): Unable to find callback function for signal Hangup: 1
+[2020-05-12 00:21:45 *18835.7]	WARNING	swSignalfd_onSignal (ERRNO 707): Unable to find callback function for signal Hangup: 1
+[2020-05-12 00:21:45 *18828.0]	WARNING	swSignalfd_onSignal (ERRNO 707): Unable to find callback function for signal Hangup: 1
+[2020-05-12 00:21:45 $18826.0]	WARNING	swSignal_callback (ERRNO 707): Unable to find callback function for signal Hangup: 1
+[2020-05-12 00:21:45 $18826.0]	WARNING	swManager_check_exit_status: worker#12[pid=18840] abnormal exit, status=0, signal=1
+[2020-05-12 00:21:45 $18826.0]	WARNING	swManager_check_exit_status: worker#8[pid=18836] abnormal exit, status=0, signal=1
+[2020-05-12 00:21:45 $18826.0]	WARNING	swManager_check_exit_status: worker#9[pid=18837] abnormal exit, status=0, signal=1
+[2020-05-12 00:21:45 $18826.0]	WARNING	swManager_check_exit_status: worker#11[pid=18839] abnormal exit, status=0, signal=1
+[2020-05-12 00:21:45 $18826.0]	WARNING	swSignal_callback (ERRNO 707): Unable to find callback function for signal Hangup: 1
