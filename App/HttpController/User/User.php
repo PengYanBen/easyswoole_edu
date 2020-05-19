@@ -12,7 +12,16 @@ class User extends Base
 
     public function get()
     {
-        $this->response()->write('获取用户模块');
+        $data = [];
+        $redis_conf = \Yaconf::get('redis');
+        $redis = new \redis();
+        $redis -> connect('127.0.0.1',6377);
+        $redis -> auth($redis_conf['redis']['passwd']);
+        
+        var_dump($redis -> config('get','requirepass'));
+
+
+        $this->writeJson('200',$data,'sucess');
     }
 
     public function create($id)
