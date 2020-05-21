@@ -21,10 +21,6 @@ trait Attribute
     private $join   = NULL;
     private $group  = NULL;
     private $alias  = NULL;
-    /** @var string 表名 */
-    protected $tableName = '';
-    /** @var string 临时表名 */
-    private $tempTableName = null;
     /** @var Table */
     private static $schemaInfoList;
     /** @var array 当前的数据 */
@@ -48,7 +44,8 @@ trait Attribute
      */
     public function schemaInfo(bool $isCache = true): Table
     {
-        $key = md5(static::class);
+        // 使用连接名+表名做key  在分库、分表的时候需要使用
+        $key = md5("{$this->connectionName}_{$this->tableName()}");
         if (isset(self::$schemaInfoList[$key]) && self::$schemaInfoList[$key] instanceof Table && $isCache == true) {
             return self::$schemaInfoList[$key];
         }
@@ -57,10 +54,10 @@ trait Attribute
         } else {
             $connectionName = $this->connectionName;
         }
-        if(empty($this->tableName)){
+        if(empty($this->tableName())){
             throw new Exception("Table name is require for model ".static::class);
         }
-        $tableObjectGeneration = new TableObjectGeneration(DbManager::getInstance()->getConnection($connectionName), $this->tableName);
+        $tableObjectGeneration = new TableObjectGeneration(DbManager::getInstance()->getConnection($connectionName), $this->tableName());
         $schemaInfo = $tableObjectGeneration->generationTable();
         self::$schemaInfoList[$key] = $schemaInfo;
         return self::$schemaInfoList[$key];
@@ -317,6 +314,12 @@ trait Attribute
                 $attrValue = call_user_func([$this,$method],$attrValue, $this->data);
             }
             $attrValue = PreProcess::dataValueFormat($attrValue, $col);
+            // 提前预算inc dec
+            if (is_array($attrValue) && isset($attrValue["[I]"]) ){
+                if ( isset($this->originData[$attrName]) ){
+                    $attrValue = $this->originData[$attrName] + $attrValue["[I]"];
+                }
+            }
             $this->data[$attrName] = $attrValue;
             return true;
         } else {

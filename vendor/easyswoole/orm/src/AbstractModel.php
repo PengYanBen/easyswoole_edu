@@ -223,11 +223,14 @@ abstract class AbstractModel implements ArrayAccess, JsonSerializable
      * 设置表名(一般用于分表)
      * @param string $name
      * @param bool $is_temp
-     * @return $this
+     * @return string|$this
      * @throws Exception
      */
-    public function tableName(string $name, bool $is_temp = false)
+    public function tableName(?string $name = null, bool $is_temp = false)
     {
+        if($name == null){
+            return $this->tableName;
+        }
         if ($is_temp){
             $this->tempTableName = $name;
         }else{
@@ -631,12 +634,11 @@ abstract class AbstractModel implements ArrayAccess, JsonSerializable
 
         $attachData = [];
         // 遍历属性，把inc 和dec 的属性先处理
+        // 能进入这里，证明在setter预算不了，只能通过字段名去数据库更新
         foreach ($this->data as $tem_key => $tem_data){
-            if (is_array($tem_data)){
-                if (isset($tem_data["[I]"])){
-                    $attachData[$tem_key] = $tem_data;
-                    unset($this->data[$tem_key]);
-                }
+            if (is_array($tem_data) && isset($tem_data["[I]"]) ){
+                $attachData[$tem_key] = $tem_data;
+                unset($this->data[$tem_key]);
             }
         }
 

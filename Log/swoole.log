@@ -72,3 +72,18 @@ Fatal error: Class 'App\HttpController\Base' not found in /home/server/doc/easys
 [2020-05-12 00:21:45 $18826.0]	WARNING	swManager_check_exit_status: worker#9[pid=18837] abnormal exit, status=0, signal=1
 [2020-05-12 00:21:45 $18826.0]	WARNING	swManager_check_exit_status: worker#11[pid=18839] abnormal exit, status=0, signal=1
 [2020-05-12 00:21:45 $18826.0]	WARNING	swSignal_callback (ERRNO 707): Unable to find callback function for signal Hangup: 1
+[2020-05-20 22:09:39 $32461.0]	WARNING	swSignal_callback (ERRNO 707): Unable to find callback function for signal Hangup: 1
+[2020-05-20 22:09:39 $32461.0]	WARNING	swManager_check_exit_status: worker#11[pid=32474] abnormal exit, status=0, signal=1
+[2020-05-20 22:09:39 $32461.0]	WARNING	swManager_check_exit_status: worker#12[pid=32475] abnormal exit, status=0, signal=1
+[2020-05-20 22:09:39 #32460.1]	WARNING	swSignalfd_onSignal (ERRNO 707): Unable to find callback function for signal Hangup: 1
+[2020-05-20 22:09:39 *32470.7]	WARNING	swSignalfd_onSignal (ERRNO 707): Unable to find callback function for signal Hangup: 1
+[2020-05-20 22:09:39 *32465.2]	WARNING	swSignalfd_onSignal (ERRNO 707): Unable to find callback function for signal Hangup: 1
+[2020-05-20 22:09:39 *32466.3]	WARNING	swSignalfd_onSignal (ERRNO 707): Unable to find callback function for signal Hangup: 1
+[2020-05-20 22:09:39 *32468.5]	WARNING	swSignalfd_onSignal (ERRNO 707): Unable to find callback function for signal Hangup: 1
+[2020-05-20 22:09:39 *32469.6]	WARNING	swSignalfd_onSignal (ERRNO 707): Unable to find callback function for signal Hangup: 1
+[2020-05-20 22:09:39 *32463.0]	WARNING	swSignalfd_onSignal (ERRNO 707): Unable to find callback function for signal Hangup: 1
+[2020-05-20 22:09:39 *32467.4]	WARNING	swSignalfd_onSignal (ERRNO 707): Unable to find callback function for signal Hangup: 1
+[2020-05-20 22:09:39 *32464.1]	WARNING	swSignalfd_onSignal (ERRNO 707): Unable to find callback function for signal Hangup: 1
+[2020-05-20 22:09:39 $32461.0]	WARNING	swManager_check_exit_status: worker#8[pid=32471] abnormal exit, status=0, signal=1
+[2020-05-20 22:09:39 $32461.0]	WARNING	swManager_check_exit_status: worker#9[pid=32472] abnormal exit, status=0, signal=1
+[2020-05-20 22:09:39 $32461.0]	WARNING	swManager_check_exit_status: worker#10[pid=32473] abnormal exit, status=0, signal=1

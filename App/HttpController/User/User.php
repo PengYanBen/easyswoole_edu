@@ -5,6 +5,7 @@ namespace App\HttpController\User;
 
 
 
+use EasySwoole\EasySwoole\Config;
 use EasySwoole\EasySwoole\Trigger;
 
 class User extends Base
@@ -12,16 +13,17 @@ class User extends Base
 
     public function get()
     {
-        $data = [];
+       /* $data = [];
         $redis_conf = \Yaconf::get('redis');
         $redis = new \redis();
         $redis -> connect('127.0.0.1',6377);
         $redis -> auth($redis_conf['redis']['passwd']);
         
-        var_dump($redis -> config('get','requirepass'));
+        var_dump($redis -> config('get','requirepass'));*/
+       $db = Config::getInstance()->getConf("MYSQL");
+        var_dump($db);
 
-
-        $this->writeJson('200',$data,'sucess');
+        $this->writeJson('200',$db,'sucess');
     }
 
     public function create($id)
