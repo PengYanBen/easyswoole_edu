@@ -1,7 +1,6 @@
 <?php
 namespace App\Lib\Redis;
 use EasySwoole\Component\Singleton;
-use EasySwoole\EasySwoole\Config;
 use EasySwoole\EasySwoole\Trigger;
 
 class Redis
