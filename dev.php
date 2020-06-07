@@ -20,5 +20,6 @@ return [
     ],
     'TEMP_DIR' => null,
     'LOG_DIR' => null,
-    'MYSQL' => \Yaconf::get('mysql'),
+    'MYSQL' => \Yaconf::get('mysql')['main'],
+    'REDIS' => \Yaconf::get('redis')['main'],
 ];

@@ -6,7 +6,10 @@ use EasySwoole\EasySwoole\Swoole\EventRegister;
 use EasySwoole\EasySwoole\AbstractInterface\Event;
 use EasySwoole\Http\Request;
 use EasySwoole\Http\Response;
-
+use EasySwoole\ORM\Db\Connection;
+use EasySwoole\ORM\DbManager;
+use EasySwoole\ORM\Db\Config;
+use EasySwoole\EasySwoole\Config as GlobalConfig;
 class EasySwooleEvent implements Event
 {
 
@@ -14,6 +17,8 @@ class EasySwooleEvent implements Event
     {
         // TODO: Implement initialize() method.
         date_default_timezone_set('Asia/Shanghai');
+        $config = new Config(GlobalConfig::getInstance()->getConf("MYSQL"));
+        DbManager::getInstance()->addConnection(new Connection($config));
     }
 
     public static function mainServerCreate(EventRegister $register)

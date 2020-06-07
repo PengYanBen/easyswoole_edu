@@ -87,3 +87,4 @@ Fatal error: Class 'App\HttpController\Base' not found in /home/server/doc/easys
 [2020-05-20 22:09:39 $32461.0]	WARNING	swManager_check_exit_status: worker#8[pid=32471] abnormal exit, status=0, signal=1
 [2020-05-20 22:09:39 $32461.0]	WARNING	swManager_check_exit_status: worker#9[pid=32472] abnormal exit, status=0, signal=1
 [2020-05-20 22:09:39 $32461.0]	WARNING	swManager_check_exit_status: worker#10[pid=32473] abnormal exit, status=0, signal=1
+[2020-05-21 10:45:13 #32460.1]	INFO	Server is shutdown now

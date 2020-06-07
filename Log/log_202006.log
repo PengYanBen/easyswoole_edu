@@ -1,0 +1,38 @@
+[2020-06-07 16:12:55][debug][error]:[Uncaught TypeError: Argument 1 passed to EasySwoole\EasySwoole\Config::__construct() must be an instance of EasySwoole\Config\AbstractConfig or null, array given, called in /home/server/doc/easyswoole/EasySwooleEvent.php on line 20 and defined in /home/server/doc/easyswoole/vendor/easyswoole/easyswoole/src/Config.php:22
+Stack trace:
+#0 /home/server/doc/easyswoole/EasySwooleEvent.php(20): EasySwoole\EasySwoole\Config->__construct(Array)
+#1 /home/server/doc/easyswoole/vendor/easyswoole/easyswoole/src/Core.php(119): EasySwoole\EasySwoole\EasySwooleEvent::initialize()
+#2 /home/server/doc/easyswoole/vendor/easyswoole/easyswoole/src/Command/DefaultCommand/Start.php(42): EasySwoole\EasySwoole\Core->globalInitialize()
+#3 /home/server/doc/easyswoole/vendor/easyswoole/easyswoole/src/Command/CommandContainer.php(46): EasySwoole\EasySwoole\Command\DefaultCommand\Start->exec(Array)
+#4 /home/server/doc/easyswoole/vendor/easyswoole/easyswoole/src/Command/CommandRunner.php(62): EasySwoole\EasySwoole\Command\CommandContainer- at file:/home/server/doc/easyswoole/vendor/easyswoole/easyswoole/src/Config.php line:22]
+[2020-06-07 16:13:08][debug][error]:[Uncaught TypeError: Argument 1 passed to EasySwoole\EasySwoole\Config::__construct() must be an instance of EasySwoole\Config\AbstractConfig or null, array given, called in /home/server/doc/easyswoole/EasySwooleEvent.php on line 20 and defined in /home/server/doc/easyswoole/vendor/easyswoole/easyswoole/src/Config.php:22
+Stack trace:
+#0 /home/server/doc/easyswoole/EasySwooleEvent.php(20): EasySwoole\EasySwoole\Config->__construct(Array)
+#1 /home/server/doc/easyswoole/vendor/easyswoole/easyswoole/src/Core.php(119): EasySwoole\EasySwoole\EasySwooleEvent::initialize()
+#2 /home/server/doc/easyswoole/vendor/easyswoole/easyswoole/src/Command/DefaultCommand/Start.php(42): EasySwoole\EasySwoole\Core->globalInitialize()
+#3 /home/server/doc/easyswoole/vendor/easyswoole/easyswoole/src/Command/CommandContainer.php(46): EasySwoole\EasySwoole\Command\DefaultCommand\Start->exec(Array)
+#4 /home/server/doc/easyswoole/vendor/easyswoole/easyswoole/src/Command/CommandRunner.php(62): EasySwoole\EasySwoole\Command\CommandContainer- at file:/home/server/doc/easyswoole/vendor/easyswoole/easyswoole/src/Config.php line:22]
+[2020-06-07 16:18:39][debug][error]:[Argument 1 passed to EasySwoole\ORM\Db\Connection::__construct() must be an instance of EasySwoole\ORM\Db\Config, array given, called in /home/server/doc/easyswoole/App/HttpController/User/User.php on line 25 at file:/home/server/doc/easyswoole/vendor/easyswoole/orm/src/Db/Connection.php line:16]
+[2020-06-07 16:21:03][debug][error]:[Argument 1 passed to EasySwoole\ORM\Db\Connection::__construct() must be an instance of EasySwoole\ORM\Db\Config, array given, called in /home/server/doc/easyswoole/App/HttpController/User/User.php on line 25 at file:/home/server/doc/easyswoole/vendor/easyswoole/orm/src/Db/Connection.php line:16]
+[2020-06-07 16:21:34][debug][error]:[Argument 1 passed to EasySwoole\ORM\Db\Connection::__construct() must be an instance of EasySwoole\ORM\Db\Config, array given, called in /home/server/doc/easyswoole/App/HttpController/User/User.php on line 26 at file:/home/server/doc/easyswoole/vendor/easyswoole/orm/src/Db/Connection.php line:16]
+[2020-06-07 16:23:17][debug][error]:[Argument 1 passed to EasySwoole\ORM\Db\Connection::__construct() must be an instance of EasySwoole\ORM\Db\Config, array given, called in /home/server/doc/easyswoole/App/HttpController/User/User.php on line 26 at file:/home/server/doc/easyswoole/vendor/easyswoole/orm/src/Db/Connection.php line:16]
+[2020-06-07 16:23:57][debug][error]:[Argument 1 passed to EasySwoole\ORM\Db\Connection::__construct() must be an instance of EasySwoole\ORM\Db\Config, array given, called in /home/server/doc/easyswoole/App/HttpController/User/User.php on line 26 at file:/home/server/doc/easyswoole/vendor/easyswoole/orm/src/Db/Connection.php line:16]
+[2020-06-07 16:31:24][debug][error]:[Argument 1 passed to EasySwoole\EasySwoole\Config::__construct() must be an instance of EasySwoole\Config\AbstractConfig or null, array given, called in /home/server/doc/easyswoole/App/HttpController/User/User.php on line 26 at file:/home/server/doc/easyswoole/vendor/easyswoole/easyswoole/src/Config.php line:22]
+[2020-06-07 16:33:40][debug][error]:[Uncaught TypeError: Argument 1 passed to EasySwoole\EasySwoole\Config::__construct() must be an instance of EasySwoole\Config\AbstractConfig or null, array given, called in /home/server/doc/easyswoole/EasySwooleEvent.php on line 20 and defined in /home/server/doc/easyswoole/vendor/easyswoole/easyswoole/src/Config.php:22
+Stack trace:
+#0 /home/server/doc/easyswoole/EasySwooleEvent.php(20): EasySwoole\EasySwoole\Config->__construct(Array)
+#1 /home/server/doc/easyswoole/vendor/easyswoole/easyswoole/src/Core.php(119): EasySwoole\EasySwoole\EasySwooleEvent::initialize()
+#2 /home/server/doc/easyswoole/vendor/easyswoole/easyswoole/src/Command/DefaultCommand/Start.php(42): EasySwoole\EasySwoole\Core->globalInitialize()
+#3 /home/server/doc/easyswoole/vendor/easyswoole/easyswoole/src/Command/CommandContainer.php(46): EasySwoole\EasySwoole\Command\DefaultCommand\Start->exec(Array)
+#4 /home/server/doc/easyswoole/vendor/easyswoole/easyswoole/src/Command/CommandRunner.php(62): EasySwoole\EasySwoole\Command\CommandContainer- at file:/home/server/doc/easyswoole/vendor/easyswoole/easyswoole/src/Config.php line:22]
+[2020-06-07 21:02:47][debug][error]:[Class 'App\Lib\Redis\Redis' not found at file:/home/server/doc/easyswoole/App/HttpController/User/User.php line:18]
+[2020-06-07 21:24:13][debug][error]:[Class 'App\Lib\Redis\Redis' not found at file:/home/server/doc/easyswoole/App/HttpController/User/User.php line:15]
+[2020-06-07 21:26:16][debug][error]:[Class 'App\Lib\Redis\Redis' not found at file:/home/server/doc/easyswoole/App/HttpController/User/User.php line:15]
+[2020-06-07 21:28:14][debug][error]:[Argument 1 passed to App\Lib\Redis\Redis::__construct() must be an instance of EasySwoole\EasySwoole\Config, array given, called in /home/server/doc/easyswoole/vendor/easyswoole/component/src/Singleton.php on line 19 at file:/home/server/doc/easyswoole/App/Lib/Redis/Redis.php line:12]
+[2020-06-07 21:29:22][debug][error]:[swoole exit at file:/home/server/doc/easyswoole/App/HttpController/User/User.php line:17]
+[2020-06-07 21:31:13][debug][error]:[swoole exit at file:/home/server/doc/easyswoole/App/HttpController/User/User.php line:17]
+[2020-06-07 21:35:21][debug][error]:[swoole exit at file:/home/server/doc/easyswoole/App/HttpController/User/User.php line:18]
+[2020-06-07 22:11:18][debug][error]:[swoole exit at file:/home/server/doc/easyswoole/App/HttpController/User/User.php line:18]
+[2020-06-07 22:11:49][debug][error]:[swoole exit at file:/home/server/doc/easyswoole/App/Lib/Redis/Redis.php line:15]
+[2020-06-07 22:13:44][debug][error]:[swoole exit at file:/home/server/doc/easyswoole/App/HttpController/User/User.php line:18]
+[2020-06-07 22:14:38][debug][error]:[swoole exit at file:/home/server/doc/easyswoole/App/Lib/Redis/Redis.php line:15]

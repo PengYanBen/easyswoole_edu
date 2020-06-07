@@ -2,28 +2,18 @@
 
 
 namespace App\HttpController\User;
-
-
-
+use App\Lib\Redis\Redis;
 use EasySwoole\EasySwoole\Config;
-use EasySwoole\EasySwoole\Trigger;
+
 
 class User extends Base
 {
 
     public function get()
     {
-       /* $data = [];
-        $redis_conf = \Yaconf::get('redis');
-        $redis = new \redis();
-        $redis -> connect('127.0.0.1',6377);
-        $redis -> auth($redis_conf['redis']['passwd']);
-        
-        var_dump($redis -> config('get','requirepass'));*/
-       $db = Config::getInstance()->getConf("MYSQL");
-        var_dump($db);
-
-        $this->writeJson('200',$db,'sucess');
+        $Redis = Redis::getInstance(Config::getInstance()->getConf("REDIS"));
+        var_dump($Redis->get('test'));
+        $this->writeJson('200',$Redis->get('test'),'sucess');
     }
 
     public function create($id)
