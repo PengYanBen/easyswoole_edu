@@ -22,6 +22,14 @@ class Router extends AbstractRouter
             $collector->delete('/user', '/User/User/delete');
         });
 
+
+        $routeCollector->addGroup('/api/media',function (RouteCollector $collector){
+            $collector->get('/video', '/Media/Video/get');
+            $collector->post('/video', '/Media/Video/create');
+            $collector->patch('/video', '/Media/Video/update');
+            $collector->delete('/video', '/Media/Video/delete');
+        });
+
    }
 
 

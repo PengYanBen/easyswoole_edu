@@ -6,7 +6,15 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'phpDocumentor\\Reflection\\' => array($vendorDir . '/phpdocumentor/reflection-common/src', $vendorDir . '/phpdocumentor/reflection-docblock/src', $vendorDir . '/phpdocumentor/type-resolver/src'),
+    'Webmozart\\Assert\\' => array($vendorDir . '/webmozart/assert/src'),
+    'Symfony\\Polyfill\\Php80\\' => array($vendorDir . '/symfony/polyfill-php80'),
+    'Symfony\\Polyfill\\Ctype\\' => array($vendorDir . '/symfony/polyfill-ctype'),
+    'Symfony\\Component\\Process\\' => array($vendorDir . '/symfony/process'),
+    'Symfony\\Component\\Filesystem\\' => array($vendorDir . '/symfony/filesystem'),
+    'Psr\\Log\\' => array($vendorDir . '/psr/log/Psr/Log'),
     'Psr\\Http\\Message\\' => array($vendorDir . '/psr/http-message/src'),
+    'Prophecy\\' => array($vendorDir . '/phpspec/prophecy/src/Prophecy'),
     'Opis\\Closure\\' => array($vendorDir . '/opis/closure/src'),
     'FastRoute\\' => array($vendorDir . '/nikic/fast-route/src'),
     'EasySwoole\\Validate\\' => array($vendorDir . '/easyswoole/validate/src'),
@@ -20,6 +28,7 @@ return array(
     'EasySwoole\\Session\\' => array($vendorDir . '/easyswoole/session/src'),
     'EasySwoole\\Pool\\Tests\\' => array($vendorDir . '/easyswoole/pool/tests'),
     'EasySwoole\\Pool\\' => array($vendorDir . '/easyswoole/pool/src'),
+    'EasySwoole\\Phpunit\\' => array($vendorDir . '/easyswoole/phpunit/src'),
     'EasySwoole\\ParserDown\\' => array($vendorDir . '/easyswoole/parsedown/src'),
     'EasySwoole\\ORM\\' => array($vendorDir . '/easyswoole/orm/src'),
     'EasySwoole\\Mysqli\\Tests\\' => array($vendorDir . '/easyswoole/mysqli/tests'),
@@ -35,6 +44,9 @@ return array(
     'EasySwoole\\Component\\Tests\\' => array($vendorDir . '/easyswoole/component/Tests'),
     'EasySwoole\\Component\\' => array($vendorDir . '/easyswoole/component/src'),
     'EasySwoole\\Annotation\\' => array($vendorDir . '/easyswoole/annotation/src'),
+    'Doctrine\\Instantiator\\' => array($vendorDir . '/doctrine/instantiator/src/Doctrine/Instantiator'),
+    'Doctrine\\Common\\Cache\\' => array($vendorDir . '/doctrine/cache/lib/Doctrine/Common/Cache'),
+    'DeepCopy\\' => array($vendorDir . '/myclabs/deep-copy/src/DeepCopy'),
     'Cron\\' => array($vendorDir . '/dragonmantank/cron-expression/src/Cron'),
     'App\\' => array($baseDir . '/App'),
 );
