@@ -16,7 +16,9 @@ return [
             'workerNum'=>4,
             'maxRunningNum'=>128,
             'timeout'=>15
-        ]
+        ],
+        'package_max_length' =>50*1024*1024,
+        'buffer_output_size'=>50*1024*1024,
     ],
     'TEMP_DIR' => null,
     'LOG_DIR' => null,

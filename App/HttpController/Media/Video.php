@@ -16,7 +16,8 @@ class Video extends Base
 
     public function create()
     {
-        new Upload($this->request()->getUploadedFile('file'));
+        $Upload = new Upload($this->request()->getUploadedFile('file'));
+        $Upload->moveTo('../');
     }
 
     public function update()

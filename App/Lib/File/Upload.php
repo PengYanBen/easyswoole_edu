@@ -24,7 +24,7 @@ class Upload
             'cilent_file_name'=> $this->file->getClientFilename(),
             'temp_name'=> $this->file->getTempName(),
         ]);
-        var_dump($obj->check());
+        var_dump($obj);exit();
     }
 
     public function moveTo($targetPath){
