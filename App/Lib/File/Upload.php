@@ -12,23 +12,32 @@ class Upload
 {
     private $file;
 
+    private $checkStatus = false;
+
+    private $path;
+
     public function __construct($file)
     {
         $this->file = $file;
         $Reflector = new Reflector();
-        $obj = $Reflector->newInstanceArgs($Reflector->ReflectionClass($this->getMedia()),[
+        $obj = $Reflector->newInstance($Reflector->ReflectionClass($this->getMedia()),[
             'size'=> $this->file->getSize(),
-            'steam'=> $this->file->getStream(),
             'media_type'=> $this->file->getClientMediaType(),
             'error'=> $this->file->getError(),
-            'cilent_file_name'=> $this->file->getClientFilename(),
+            'client_file_name'=> $this->file->getClientFilename(),
             'temp_name'=> $this->file->getTempName(),
+            //'steam'=> $this->file->getStream(),
         ]);
-        var_dump($obj->check());
+        if($obj->check()){
+            $this->checkStatus = true;
+            $this->path = $obj->getPath();
+        }
     }
 
-    public function moveTo($targetPath){
+    public function moveTo($targetPath=''){
+        $targetPath = empty($targetPath)?$this->path:$targetPath;
         $this->file->moveTo($targetPath);
+        return $targetPath;
     }
 
     public function getMedia($type=0){
@@ -59,4 +68,5 @@ class Upload
     public function getTempName(){
         return  $this->file->getTempName();
     }
+
 }

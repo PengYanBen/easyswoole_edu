@@ -15,7 +15,7 @@ class Image
 
     public function __construct($file)
     {
-        $this->file = $file;
+        return $file;
     }
 
 

@@ -6,6 +6,8 @@ namespace App\Lib\Reflector;
 
 
 
+use function Couchbase\defaultDecoder;
+
 class Reflector
 {
 
@@ -17,7 +19,7 @@ class Reflector
         return $map[$type];
     }
 
-    public function newInstanceArgs($className,$param=[],$instance=false){
-        return $instance?$className:(new \ReflectionClass($className))->newInstanceArgs($param);
+    public function newInstance($className,$param=[],$instance=true){
+        return $instance?(new \ReflectionClass($className))->newInstance($param):$className;
     }
 }
